@@ -1,0 +1,37 @@
+[
+  {
+    "id": "star-trek",
+    "title": "Star Trek",
+    "description": "The series followed the voyages of the crew of the starship USS Enterprise, a space exploration vessel built by the United Federation of Planets in the 23rd century, on a mission \"to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.\""
+  },
+  {
+    "id": "star-wars",
+    "title": "Star Wars",
+    "description": "The Star Wars franchise depicts the adventures of characters \"a long time ago in a galaxy far, far away\" across multiple fictional eras, in which humans and many species of aliens (often humanoid) co-exist with droids, which may be programmed for personal assistance or battle."
+  },
+  {
+    "id": "babylon-5",
+    "title": "Babylon 5",
+    "description": "The series follows the human military, staff, and alien diplomats stationed on a space station, Babylon 5, built in the aftermath of several major inter-species wars as a neutral ground for galactic diplomacy and trade."
+  },
+  {
+    "id": "the-expanse",
+    "title": "The Expanse",
+    "description": "Set in a future where humanity has colonized the Solar System, it follows a disparate band of protagonists as they unwittingly unravel and place themselves at the center of a conspiracy that threatens the system's fragile peace, while dealing with existential crises brought forth by newly discovered alien technology."
+  },
+  {
+    "id": "dune",
+    "title": "Dune",
+    "description": "The Dune universe, set in the distant future of humanity, has a history that stretches thousands of years (some 15,000 years in total) and covers considerable changes in political, social, and religious structure as well as technology."
+  },
+  {
+    "id": "foundation",
+    "title": "Foundation",
+    "description": "In the waning days of a future Galactic Empire, mathematician Hari Seldon foresees the imminent fall of the Empire, which encompasses the entire Milky Way, and a dark age lasting 30,000 years before a second empire arises. Although the momentum of the Empire's fall is too great to stop, Seldon devises a plan by which \"the onrushing mass of events must be deflected just a little\" to eventually limit this interregnum to just one thousand years."
+  },
+  {
+    "id": "stargate-sg-1",
+    "title": "Stargate SG-1",
+    "description": "Stargate SG-1 begins about a year after the events of the feature film when the United States government learns that an ancient alien device called the Stargate can access a network of such devices on a multitude of planets and in space. SG-1 is an elite United States Air Force special operations team, one of about 20 teams from Earth who explore the galaxy and defend against alien threats."
+  }
+]

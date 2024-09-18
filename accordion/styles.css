@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-gray-100: #f4f3f1;
+  --color-gray-200: #dddbd8;
+  --color-gray-300: #ccc9c6;
+  --color-gray-400: #aeaba7;
+  --color-gray-500: #8a8784;
+  --color-gray-600: #656360;
+  --color-gray-700: #4b4a47;
+  --color-gray-800: #31302e;
+  --color-gray-900: #1f1d1b;
+
+  color: var(--color-gray-900);
+  color-scheme: light dark;
+  /*
+  background-color: #fdfdff;
+  */
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+main {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+div#header {
+  display: flex;
+  padding: 0 0.5rem 0.5rem;
+  border: thin solid transparent;
+  justify-content: space-between;
+}
+div#header p {
+  margin: 0;
+}
+div#header label {
+  user-select: none;
+}
+
+div#accordion {
+  /*
+  background-color: white;
+  */
+}
+
+div#accordion section {
+  border: thin solid black;
+  border-top: none;
+}
+div#accordion section:first-child {
+  border-top: thin solid black;
+}
+
+section div.title {
+  border-bottom: none;
+}
+
+section .description {
+  display: none;
+}
+
+section.open .description {
+  display: block;
+}
+section.open div.title {
+  border-bottom: thin solid #c6c6fa;
+}
+section.open div.collapse {
+  display: inline-block;
+}
+section:not(.open) div.collapse {
+  display: none;
+}
+section.open div.expand {
+  display: none;
+}
+
+div.title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-color: #e6e6fa;
+}
+div.title:hover {
+  background-color: #d6d6fa;
+}
+div.title * {
+  /* so we can click through the title and icons */
+  pointer-events: none;
+}
+
+div.description {
+  padding: 0 0.5rem;
+}
+
+main > p {
+  padding: 0 0.5rem;
+}
+p#status.error {
+ padding: 1rem;
+ border-radius: 5px;
+ background-color: lightpink;
+}
+p#notes {
+  display: none;
+  font-size: 0.8rem;
+}
