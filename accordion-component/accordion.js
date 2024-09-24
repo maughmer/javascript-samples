@@ -108,10 +108,14 @@ class Accordion extends HTMLElement {
       const data = await response.json();
       this.sortByTitle(data);
       this.dataSource = [...data];
+      // this is kinda hacky, but notifies attributeChangedCallback
+      // that we're ready to populate the accordion
       this.setAttribute('data-source', 'dataSource');
     } catch (error) {
-      status.innerText = error.message;
-      status.className = 'error';
+      this.dispatchEvent(new CustomEvent('data-error', {
+        composed: true,
+        detail: error.message
+      }));
     }
   }
 
@@ -177,6 +181,7 @@ class Accordion extends HTMLElement {
     this.shadow.appendChild(linkElem);
     this.shadow.appendChild(this.wrapper);
 
+    this.dispatchEvent(new CustomEvent('data-loaded', { composed: true }));
     this.openFirstTab();
   }
 
