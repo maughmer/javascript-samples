@@ -24,3 +24,7 @@ that the descriptions were culled from Wikipedia.
 
 Once retrieved, the data is sorted by title, with accommodation for _**The**_ at the beginning
 of a title. _**A**_ and _**An**_ are left as an exercise for another time.
+
+## accordion-component
+
+A sample accordion, as above, but this time implemented as a [Web Component](https://developer.mozilla.org/en-US/docs/Web/API/Web_components).
