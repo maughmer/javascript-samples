@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Accordion Web Component</title>
+</head>
+<body>
+
+<main>
+  <div id="header">
+    <p>Accordion Web Component<p>
+    <label>
+      <input type="checkbox" onChange="handleMultipleChecked(event);" /> Allow Multiple
+    </label>
+  </div>
+
+  <!-- will be populated programatically -->
+  <custom-accordion multiple="false" />
+
+  <p id="status">Loading data...</p>
+  <p id="notes">Descriptions borrowed from Wikipedia.</p>
+</main>
+
+<script src="scripts.js"></script>
+<script src="accordion.js"></script>
+</body>
+</html>

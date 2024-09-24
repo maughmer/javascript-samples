@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  border: thin solid black;
+  border-top: none;
+}
+section:first-child {
+  border-top: thin solid black;
+}
+
+section div.title {
+  border-bottom: none;
+}
+
+section .description {
+  display: none;
+}
+
+section.open .description {
+  display: block;
+}
+section.open div.title {
+  border-bottom: thin solid #c6c6fa;
+}
+section.open div.collapse {
+  display: inline-block;
+}
+section:not(.open) div.collapse {
+  display: none;
+}
+section.open div.expand {
+  display: none;
+}
+
+div.title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-color: #e6e6fa;
+}
+div.title:hover {
+  background-color: #d6d6fa;
+}
+div.title * {
+  /* so we can click through the title and icons */
+  pointer-events: none;
+}
+
+div.description {
+  padding: 0 0.5rem;
+}
